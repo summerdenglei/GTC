@@ -1,8 +1,4 @@
-# Graph_Spectral_Regularized_Tensor_Completion
-codes for Graph_Spectral_Regularized_Tensor_Completion
 
-Codes for paper:
-L. Deng et al. "Graph Spectral Regularized Tensor Completion for Traffic Data Imputation" IEEE T-ITS, 2021.
 
 PeMS08/04.mat: Traffic volume datasets.
 
