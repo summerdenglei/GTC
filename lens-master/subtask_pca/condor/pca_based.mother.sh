@@ -1,0 +1,3 @@
+#!/bin/bash
+
+matlab -r "[tp, tn, fp, fn, precision, recall, f1score] = pca_based('INPUT_DIR', 'FILENAME', NUM_FRAMES, WIDTH, HEIGHT, BLOCK_WIDTH, BLOCK_HEIGHT, RANK, THRESH, OPT_DECT, OPT_SWAP_MAT); fh = fopen(['/u/yichao/anomaly_compression/condor_data/subtask_pca/condor/output/pca_based.FILENAME.NUM_FRAMES.WIDTH.HEIGHT.BLOCK_WIDTH.BLOCK_HEIGHT.RANK.THRESH.OPT_DECT.OPT_SWAP_MAT.txt'], 'w'); fprintf(fh, '%d, %d, %d, %d, %f, %f, %f\n', tp, tn, fp, fn, precision, recall, f1score); fclose(fh); exit;"

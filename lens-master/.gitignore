@@ -1,0 +1,55 @@
+#####
+## input
+#####
+data
+data_zion
+
+
+#####
+## output
+#####
+processed_data
+processed_data_zion
+figures
+
+
+#####
+## tmp output
+#####
+tmp*
+*/tmp*
+
+
+#####
+## compile output
+#####
+*.pyc
+*/*.pyc
+
+
+#####
+## to delete
+#####
+*/delete
+*/*/delete
+*.mine
+*.org
+*.bk
+backup*
+
+#####
+## condor, cvs
+#####
+condor_data
+condor_data_roadkill
+cvs_repository
+
+#####
+## don't track
+#####
+utils/lens
+c
+lens3.m
+lens3_scaled.m
+*.txt
+*.eps

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+matlab -r "[psnr_srmf, compressed_ratio_srmf, psnr_base, compressed_ratio_base] = compressive_sensing_psnr(RANK, GRP_SIZE, 'VIDEO_NAME.yuv', NUM_FRAMES, WIDTH, HEIGHT); fh = fopen(['/u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/output/compressive_sensing_psnr.VIDEO_NAME.GRP_SIZE.RANK.NUM_FRAMES.WIDTH.HEIGHT.txt'], 'w'); fprintf(fh, '%f, %f, %f, %f\n', compressed_ratio_srmf, psnr_srmf, compressed_ratio_base, psnr_base); fclose(fh); exit;"

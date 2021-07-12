@@ -1,0 +1,27 @@
+steps:
+1. tshark_cmd.pl
+     parse pcap traces
+2. retrieve_all_ip.pl
+     get all IP adresses in the traces
+3. update_geo_asn_table.pl
+     update IP to GEO and AS table
+4. summarize_geo_asn_table.pl
+     gather multiple tables from above and generate 1 single table
+5. gen_trace_summary.pl
+     preprocess the trace, summarize src->dst info per second
+6. sort_ips.pl
+     sort and group IPs accordingly
+7. gen_tm.pl
+     according to the sorting result, generate TM
+8. tm_top.m
+     select the most popular k venues
+
+9. gen_tm_ap_load.m
+     read 3D TM output above and convert to 2D TM by only considering the traffic load of APs.
+10. gen_tm_ap_load.pl
+     Generate 2D TM as above, but from summarized text file directly.
+
+11. ap_topology.pl
+     try to group APs by it's topology.
+     it's not complete yet because cannot find the map between AP IP and the topology figure.
+

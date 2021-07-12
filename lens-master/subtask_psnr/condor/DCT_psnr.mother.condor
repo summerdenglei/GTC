@@ -1,0 +1,17 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /bin/bash
+arguments = tmp.DCT_psnr.XXX.sh
+Requirements = Memory >= 64
+Rank = Memory >= 128
+
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/DCT_psnr.XXX.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/DCT_psnr.XXX.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/DCT_psnr.XXX.log
+
+Queue 1

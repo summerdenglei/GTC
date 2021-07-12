@@ -1,0 +1,9 @@
+1. plot_TM.pl
+   plot the heat map of TM per snapshot
+
+2. plot_anomaly_size.m
+   plot:
+   a) time-series of total traffic.
+   b) time-series of one flow traffic.
+   c) time-series of ratio of 0s.
+   d) total traffic load per BS/AP/OD pair.

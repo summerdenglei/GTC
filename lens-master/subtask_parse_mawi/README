@@ -1,0 +1,9 @@
+steps:
+1. tshark_cmd.pl
+     parse pcap traces
+2. gen_trace_summary.pl
+     preprocess the trace, summarize src->dst info per second
+3. sort_ips.pl
+     sort and group IPs accordingly
+4. gen_tm.pl
+     according to the sorting result, generate TM

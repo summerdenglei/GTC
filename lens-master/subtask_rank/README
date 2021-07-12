@@ -1,0 +1,4 @@
+1. analyze_low_rank_2d.m
+   the code used for Mobicom14 figures.
+2. analyze_low_rank_2d_interp.m
+   same as analyze_low_rank_2d.m, but output less points to plot in excel.

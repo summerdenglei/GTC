@@ -1,0 +1,18 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /bin/bash
+arguments = tmp.XXX.sh
+Requirements = (ARCH == "X86_64") && (Memory >= 64)
+# Requirements = (ARCH == "INTEL") && (Memory >= 64)
+Rank = Memory >= 128
+
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_pca/condor/log/pca_based_pred.XXX.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_pca/condor/log/pca_based_pred.XXX.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_pca/condor/log/pca_based_pred.XXX.log
+
+Queue 1

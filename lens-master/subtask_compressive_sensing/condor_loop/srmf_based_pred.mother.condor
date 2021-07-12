@@ -1,0 +1,18 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /bin/bash
+arguments = tmp.XXX.sh
+Requirements = (ARCH == "X86_64") && (Memory >= 64)
+# Requirements = (ARCH == "INTEL") && (Memory >= 64)
+Rank = (Memory >= 128) + ((machine == "128.83.139.214")*0) + ((machine == "128.83.144.246")*0) + ((machine == "128.83.139.234")*0) + ((machine == "128.83.139.246")*0) + ((machine == "128.83.144.252")*0) + ((machine == "128.83.144.137")*0) + ((machine == "128.83.144.166")*0) + ((machine == "128.83.144.48")*0) + ((machine == "128.83.144.70")*0) + ((machine == "128.83.144.85")*0) + ((machine == "128.83.130.223")*0) + ((machine == "128.83.130.223")*0) + ((machine == "128.83.120.148")*0) + ((machine == "128.83.120.217")*0) + ((machine == "128.83.130.14")*0) + ((machine == "128.83.130.161")*0) + ((machine == "128.83.120.127")*0)
+
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_compressive_sensing/condor_loop/log/XXX.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_compressive_sensing/condor_loop/log/XXX.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_compressive_sensing/condor_loop/log/XXX.log
+
+Queue 1

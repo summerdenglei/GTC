@@ -1,0 +1,17 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /bin/bash
+arguments = tmp.gen_ip_info.IND.sh
+Requirements = Memory >= 10
+Rank = Memory >= 16
+
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_ip_info.IND.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_ip_info.IND.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_ip_info.IND.log
+
+Queue 1

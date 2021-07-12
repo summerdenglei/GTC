@@ -1,0 +1,13 @@
+1. Generate TM of singaling data
+   gen_signaling_tm.pl
+
+
+2. Generate TM on latlng
+   gen_3g_geo_tm.pl
+
+3. Group traffic from IP level to sector level (for analysis of traffic load of sectors)
+   group_ip_by_cell.pl
+
+4. Generate TM on Cell and it's type
+   gen_3g_cell_type_tm.pl
+

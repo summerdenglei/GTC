@@ -1,0 +1,3 @@
+#!/bin/bash
+
+matlab -r "[tp, tn, fp, fn, precision, recall, f1score] = dct_based('INPUT_DIR', 'FILENAME', NUM_FRAMES, WIDTH, HEIGHT, GROUP_SIZE, THRESH, OPT_SWAP_MAT, OPT_TYPE, CHUNK_WIDTH, CHUNK_HEIGHT, SEL_CHUNKS, QUANTIZATION); fh = fopen(['/u/yichao/anomaly_compression/condor_data/subtask_3ddct/condor/output/dct_based.FILENAME.NUM_FRAMES.WIDTH.HEIGHT.GROUP_SIZE.THRESH.OPT_SWAP_MAT.OPT_TYPE.CHUNK_WIDTH.CHUNK_HEIGHT.SEL_CHUNKS.QUANTIZATION.txt'], 'w'); fprintf(fh, '%d, %d, %d, %d, %f, %f, %f\n', tp, tn, fp, fn, precision, recall, f1score); fclose(fh); exit;"

@@ -1,0 +1,16 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /usr/bin/perl
+arguments = gen_trace_summary.pl FULL_PATH 1
+
+Requirements = (ARCH == "X86_64")
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_trace_summary.INDEX.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_trace_summary.INDEX.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_parse_sjtu_wifi/condor/log/gen_trace_summary.INDEX.log
+
+Queue 1

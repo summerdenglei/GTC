@@ -1,0 +1,17 @@
++Group = "GRAD" 
++Project = "NETWORKING_MULTIMEDIA" 
++ProjectDescription = "process data for video based anomaly detection" 
+
+Universe = vanilla
+
+executable = /bin/bash
+arguments = tmp.PCA_psnr_by_frame.XXX.sh
+Requirements = Memory >= 64
+Rank = Memory >= 128
+
+
+Error = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/PCA_psnr_by_frame.XXX.err
+Output = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/PCA_psnr_by_frame.XXX.txt
+Log = /u/yichao/anomaly_compression/condor_data/subtask_psnr/condor/log/PCA_psnr_by_frame.XXX.log
+
+Queue 1
