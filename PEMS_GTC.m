@@ -31,7 +31,7 @@ for rate=2
         maxP = max(X(:));
         %  Omega = find(rand(n1*n2*n3,1)<p);
         
-        %% 随机缺失
+        %% random sampling
         rand('seed',10);
         Omega=randperm(n1*n2*n3,round(p*n1*n2*n3))     ;
         O= zeros(size(X))               ;
@@ -49,7 +49,7 @@ for rate=2
         maxiter=1;
         T0=rand(n1,n2,n3);
         for iter=1:maxiter
-            [ TC,para,iterRSE] = TCTF_video(Ts,Omega,rank_strategy,p,lamda,alpha,i,2,T0);%i是秩
+            [ TC,para,iterRSE] = TCTF_video(Ts,Omega,rank_strategy,p,lamda,alpha,i,2,T0);
             di=X-TC;
             di=di.*(1-O);
             %
@@ -372,7 +372,7 @@ while (k<=maxit)
     
     if k<maxit+1
         TC(known) = data;
-        TC=real(TC);%结果 只取实数
+        TC=real(TC);%缁撴灉 鍙彇瀹炴暟
     else
         TC=real(TC);
     end
